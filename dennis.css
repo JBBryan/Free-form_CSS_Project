@@ -1,0 +1,583 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+* {
+color: #e6dfda;
+font:400 18px/32px 'Open Sans', Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slider-que {
+  height:40px;
+  width:160px;
+  opacity: 100%;
+  background-color:#f47700;
+  position:fixed;
+  bottom: 0;
+  padding:5px;
+  margin-left: 80%;
+  text-align: center;
+  padding:0 10px 0 10px;
+  z-index: 99999;
+ /* font-size: 12px;
+  color: #fff;
+  vertical-align: middle;*/
+}
+
+.slider-que div {
+  font-size: 12px;
+  color: #fff;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+
+.button:hover {
+  background-color:#a6a29c;
+}
+body {
+  margin:0;
+  height: 2000px;
+}
+
+header {
+  width:100%;
+  background:linear-gradient(to right, #aba9a4 0%,#9a9894 50%,#7a7774 100%);
+  height: 474px;
+  padding-bottom: 50px;
+}
+
+nav {
+  height:40px;
+  width:486px;
+  float: right;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  position: relative;
+  top:30px;
+
+}
+ul {
+  vertical-align: top;
+  float:left;
+}
+
+li {
+  display: inline-block;
+  margin-left: 15px;
+}
+nav .button {
+float:right;
+margin-top: 8px;
+margin-right: 60px;
+color: #e6dfda;
+text-decoration: none;
+border: 1px solid #e6dfda;
+border-radius: 4px;
+padding: 8px 20px 8px 20px;
+
+}
+
+nav li a {
+  color: #e6dfda;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+.opl a{
+  background: url('https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png') no-repeat;
+  height: 80px;
+  width: 80px;
+  text-indent: -99999px;
+  display: block;
+  position: relative;
+  top: 30px;
+}
+
+.home-image {
+  height: 0px;
+  width: 0px;
+}
+.home-image img {
+  margin-left: 110px;
+  margin-top: -29.8px;
+}
+
+.text-box {
+  float: right;
+  clear: both;
+  max-height: 500px;
+  width: 450px;
+  margin: 100px;
+    margin-bottom: 25px;
+}
+
+.text-box h1 {
+  color: #e6dfda;
+  font: 400 35px/45px 'Open Sans', Helvetica, sans-serif;
+}
+
+.text-box a {
+text-decoration: none;
+color: #e6dfda;
+border: 1px solid #e6dfda;
+border-radius: 4px;
+padding: 14px 20px 14px 20px;
+font-family: 'Open Sans', Helvetica, sans-serif;
+font-size:20px;
+}
+
+/*<-----------Hello Section------------>*/
+.hello {
+  width: 100%;
+  background: #4e4a47;
+}
+
+.arrow {
+  position: relative;
+  background-color: #4e4a47;
+  height: 60px;
+  width: 110px;
+  top: -60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 100px 100px 0 0;
+}
+
+.arrow img {
+  margin-top: 40px;
+}
+
+.hello h2 {
+  font: 400 35px/37px 'Open Sans', Helvetica, sans-serif;
+  text-align: center;
+}
+
+.hello div {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.hello p {
+  font:400 20px/32px 'Open Sans', Helvetica, sans-serif;
+  line-height: 2;
+  color:#aba9a4;
+  font-weight: 100;
+}
+
+.bottom-arrow {
+  position: relative;
+  background-color: #4e4a47;
+  height: 60px;
+  width: 110px;
+  bottom: -60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0px 0px 100px 100px;
+}
+
+.bottom-arrow img {
+  margin-top: 8px;
+}
+
+/*<---------experience----------->*/
+article h1{
+  text-align: center;
+  margin-top: 130px;
+  font:400 40px/37px 'Open Sans', Helvetica, sans-serif;
+  color: #4f4a47;
+}
+
+article div{
+  width: 800px;
+  margin:0 auto;
+  text-align: center;
+}
+
+article div p {
+  color:#85837f;
+}
+
+.black {
+  color: black;
+}
+
+p a{
+  color:black;
+}
+
+strong {
+  color:#85837f;
+  font-weight:bold;
+}
+.visual {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.image-holder {
+  display:inline-block;
+  margin: 10px;
+}
+
+/*<----------logos---------->*/
+.box div {
+  text-align: center;
+}
+.logo-holder{
+  background-color: #f2f2f0;
+  padding: 85px 0 85px 0;
+}
+
+.logo-holder div{
+  display: inline-block;
+  margin: 0 60px 0 60px;
+}
+
+/*<-----------form-------------->*/
+.form{
+  width: 100%;
+  display: block;
+  color: #918f8c;
+  background:#d8d7d2;
+  position: relative;
+  height: 1250px;
+}
+
+
+.available {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right:0;
+  width: 93px;
+  height: 95px;
+  background: url(http://www.iamdennisfield.com/images/label.png) no-repeat;
+
+}
+
+.form h1{
+  margin-top: 0px;
+  position: relative;
+  top: 130px;
+  color: #4f4a47;
+  font:400 35px/37px 'Open Sans', Helvetica, sans-serif;
+}
+
+.form-p{
+  text-align: center;
+  color: #918f8c;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  top:150px;
+}
+
+.row {
+  position: relative;
+  top: 200px;
+  display: inline-block;
+  width: 40%;
+  margin-left:15px;
+  margin-right: 15px;
+}
+
+.messagerow {
+  position: relative;
+  top: 219px;
+  width: 83%;
+  height: 150px;
+  display:inline-block;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px;
+  border-radius: 2px;
+  border:none;
+  color: black;
+}
+
+.messagerow textarea{
+  text-align: start;
+  width: 100%;
+  color: black;
+  height: 100%;
+  border: 0;
+  padding-right: 18px;
+}
+
+.submitrow {
+  position: relative;
+  top: 255px;
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+}
+
+.submitrow input{
+  width: 400px;
+  background:#f47700;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*<----------discussion section---------->*/
+.discussion {
+  position: relative;
+  top: 300px;
+  float: none;
+}
+
+.discussion li {
+  max-width: 260px;
+  display: inline-block;
+}
+
+.comments {
+  max-height:240px;
+  padding:8px 20px 0px 20px;
+  text-align: left;
+  background-color: #fff;
+
+}
+
+.comments p{
+  font: 400 10px/18px 'Open Sans', Helvetica, sans-serif;
+  text-align: left;
+  color: #918f8c;
+}
+
+.comments h3{
+  text-align: left;
+  font:700 14px/16px 'Open Sans', Helvetica, sans-serif;
+  color:#4f4a47;
+  margin-right: 0 0 0 0;
+}
+
+.comments h4{
+  text-align: left;
+  font:400 italic 14px/16px 'Open Sans', Helvetica, sans-serif;
+  color: #918f8c;
+  margin: 0 0 0 0;
+}
+
+.comments img {
+  height: 30px;
+  width: 35px;
+  position: relative;
+  top: 30px;
+}
+
+.photo {
+  margin-top: 30px;
+}
+
+.photo img {
+  height: 106px;
+  width: 106px;
+  border-radius: 100%;
+}
+/*<-----------Footer----------->*/
+.footer-holder {
+  background-color: #4e4a47;
+  height:100px;
+}
+.up-arrow {
+  position: relative;
+  background-color: #4e4a47;
+  height: 60px;
+  width: 110px;
+  top: -60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 100px 100px 0 0;
+}
+
+.up-arrow img {
+  margin-top: 35px;
+}
+.personal-info {
+  display: inline-block;
+}
+.personal-info p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -60px 0 180px ;
+  position: relative;
+  top: -20px;
+  color: #918f8c;
+  font: 400 14px/16px 'Open Sans', Helvetica, sans-serif;
+
+}
+
+a .fa{
+  margin-right:15px;
+  color: #918f8c;
+}
+
+.fa-twitter{
+  margin-left: 220px;
+}
+
+.icons p{
+  margin-right:20px;
+  display: inline-block;
+}
+/*<---------slider------------->*/
+.slide-up {
+  width:320px;
+  display: none;
+  background-color:#f47700;
+  float: right;
+  margin-right: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+}
+
+.exit-box {
+  height: 25px;
+  width: 25px;
+  background-color:#FF9E5E;
+  float: right;
+  margin-right: 40px;
+}
+
+.exit-box i{
+  position: relative;
+  bottom: 3px;
+  left: 7px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slide-up h1 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  width: 200px;
+  font-weight: 200;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.texty-box{
+  background-color: #fff;
+  width: 310px;
+  margin-left: 5px;
+  max-height: 307px;
+  position: relative;
+  bottom: 5px;
+  padding-bottom: 30px;
+}
+
+.texty-box p {
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-top: 25px;
+  font: 400 12px/18px 'Open Sans', Helvetica, sans-serif;
+  color: #85837f;
+}
+.index-holder{
+  text-align: center;
+}
+
+.index-holder i{
+  margin-left: -15px;
+  font-size: 50%;
+}
+
+.input {
+  border-bottom: 1px solid #e6dfda;
+  width: 78%;
+  border-radius: 0px;
+  margin: 0 auto;
+  line-height: 15px;
+  font-size: 14px;
+  line-height: 12px;
+  font-family: 'Lato', sans-serif;
+  margin-left: 0px;
+  text-align: start;
+  padding-left: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-weight: 100;
+  color: black;
+}
+
+.input:focus{
+  outline: 0px;
+}
+
+.sub-n-disclaim{
+  width: 100%;
+  display: inline-block;
+}
+
+.sub-n-disclaim input {
+  float: left;
+  padding: 5px;
+  border-radius: 0;
+  margin-left: 20px;
+  background-color: #f47700;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 15px;
+  width: 40%;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.sub-n-disclaim p {
+  width: 40%;
+  float: right;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  font-size: 10px;
+  margin-right: 20px;
+  margin-top: 27px;
+}
+
+
+/*.sub-n-disclaim input{
+  position: relative;
+  bottom: 80px;
+  left: 15px;
+  width: 100%;
+}*/
+
